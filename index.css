@@ -1,0 +1,80 @@
+/* resetting the browser default style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* removing the bullet from the list/editing my list */
+li{
+    list-style: none;
+    border: 1px solid #dddddd;
+    margin-top: -1px; /*for preventing double borders*/
+    background-color: #f6f6f6;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px;
+}
+
+/* adding hover effect to my list */
+li:hover{
+    background-color: rgba(18, 25.5, 44.7, 0.3);
+}
+
+/* doing the pill button background */
+.username{
+    background-color: #6461a6;
+    color: #ffffff;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+/* Body of the web */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: cyan;
+}
+
+/* for my heading */
+.heading{
+    margin: 10px 0;
+    text-align: center;
+    color: #6461a6;
+}
+
+
+/* search box section */
+.search-section{
+    background-color: #6461a6;
+    padding: 7px;
+}
+
+/* for my search button area */
+#search{
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+}
+
+/* for the user list section */
+.user-list-section{
+    margin-top: 20px;
+}
+
+/* Media Query for large screens|| the code min-width: 1000px means anytime the screen is over 1000px add the css effect that is been written underneath. */
+@media (min-width: 1000px){
+    body{
+        width: 50%;
+    }
+
+    li{
+        font-size: 14px;
+    }
+}
